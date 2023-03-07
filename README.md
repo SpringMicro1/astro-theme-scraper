@@ -11,7 +11,8 @@ On https://astro.build/themes/1
     name: "AstroPaper",
     description: "A minimal, accessible and SEO-friendly Astro blog theme.",
     link: "https://astro.build/themes/details/astro-paper",
-    image: "https://astro.build/_astro/astro-paper-hero.dc566b94.webp"
+    image: "https://astro.build/_astro/astro-paper-hero.dc566b94.webp",
+    free: true
   },
   ...
 ]
@@ -37,6 +38,7 @@ Finally, merge the two data sets so that we have one big array with the followin
     description: "A minimal, accessible and SEO-friendly Astro blog theme.",
     link: "https://astro.build/themes/details/astro-paper",
     image: "https://astro.build/_astro/astro-paper-hero.dc566b94.webp",
+    free: true,
     getStartedLink: "https://github.com/satnaing/astro-paper",
     liveDemoLink: "https://astro-paper.pages.dev/"
   },
