@@ -1,0 +1,63 @@
+---
+layout: "../layouts/PlainDocument.astro"
+title: How To Make an eCommerce Site
+---
+
+import Setup from "../components/Setup.astro";
+
+<Setup
+  title="eCommerce"
+  deployToVercel="https://vercel.com/new/clone?repository-url=https://github.com/michael-andreuzza/quickstore"
+/>
+
+### Navigate the Codebase
+
+![Folders](/assets/img/setup/_code1.png)
+
+The `src` folder is where the code is. The `pages` folder is where the pages are, and `index.astro` is the home page. In this example, the page is made up of **components** called `Hero` and `Products`. Those are located in the `components` folder.
+
+#### Changing Text
+
+Open `src/components/landing/Hero.astro`. Find the title text and change it to have whatever. <kbd>Ctrl+S</kbd> to save and see your changes in the preview whenever you make a change.
+
+![text](/assets/img/setup/_text.png)
+
+#### Changing Images
+
+Open `src/components/landing/Products.astro`. Find an `<img>` tag and change the `src=` to have a different image link.
+
+![image](/assets/img/setup/_images.png)
+
+#### Styling
+
+All style in the project is done with <a href="https://tailwindcss.com/" class="font-semibold text-blue-500" target="_blank">Tailwind CSS</a>. Check out that site for examples on fonts, colors, etc.
+
+**_Example ChatGPT Prompt_**
+
+You can use ChatGPT to spit out Tailwind style with HTML content.
+
+**prompt**
+
+```
+"Welcome to my website" centered text blue using tailwind.
+```
+
+**output**
+
+```html
+<div class="flex justify-center items-center h-screen">
+  <h1 class="text-blue-500 text-center text-4xl">Welcome to my website</h1>
+</div>
+```
+
+### Save Project and Deploy (Push)
+
+To save the project in StackBlitz and have it deploy to Vercel, select the **Commit** button in the top left, put a save message to identify your changes, and then **Commit and Push**.
+
+![image](/assets/img/setup/_commit.png)
+
+In Vercel, navigate to the project (whatever `company-name` is for you) and find the **Deployments** tab. You can see the most recent deployments and commit messages.
+
+![image](/assets/img/setup/_deploy.png)
+
+On the **Project** tab in Vercel, you can see the domains.

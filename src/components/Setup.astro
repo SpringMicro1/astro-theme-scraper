@@ -1,0 +1,61 @@
+---
+const { title, deployToVercel } = Astro.props;
+---
+
+<h3>Setup</h3>
+
+<p>
+  Log in to <a
+    href="https://github.com"
+    class="font-semibold text-blue-500"
+    target="_blank">GitHub</a
+  > as <code>springmicrohost1</code>. You'll use this GitHub account to log in
+  to these two sites:
+</p>
+<ul>
+  <li>
+    <a
+      href="https://stackblitz.com"
+      class="font-semibold text-blue-500"
+      target="_blank">stackblitz.com</a
+    >: Where you edit the code and preview the site. <em
+      >Works best in Chrome or Firefox.</em
+    >
+  </li>
+  <li>
+    <a
+      href="https://vercel.com"
+      class="font-semibold text-blue-500"
+      target="_blank">vercel.com</a
+    >: Where you view code deployments and get the site link.
+  </li>
+</ul>
+
+<h4>Get the Template On Vercel and GitHub</h4>
+
+<p>
+  To deploy the {title} template to Vercel and get the site on GitHub, <a
+    class="font-semibold text-blue-500"
+    href={deployToVercel}
+    target="_blank">Click Here</a
+  >. Name the repository and uncheck the "Create private Git Repository" box so
+  StackBlitz can access the code when you edit later.
+</p>
+
+<img src="/assets/img/setup/_vercel1.png" alt="vercel repo" />
+
+<h4>Open and Edit the Code in StackBlitz</h4>
+
+<p>
+  Visit <a
+    href="https://stackblitz.com/"
+    class="font-semibold text-blue-500"
+    target="_blank">https://stackblitz.com/</a
+  > and select "Open GitHub Repository". Then search for the repository you just
+  made ()<code>springmicrohost/company-name</code>, where <code
+    >company-name</code
+  > is whatever you picked).
+</p>
+
+<img src="/assets/img/setup/_stackblitz1.png" alt="stackblitz" />
+<img src="/assets/img/setup/_stackblitz2.png" alt="stackblitz" />
